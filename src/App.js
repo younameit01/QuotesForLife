@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import NavBar from "./widgets/NavBar";
+import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes />
+    </Router>
   );
 }
 
